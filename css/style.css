@@ -1,0 +1,41 @@
+:root {
+  --color-primary: #3B82F6;
+  --color-primary-hover: #2563EB;
+  --color-dark: #0F172A;
+  --color-dark-light: #1E293B;
+  --color-light: #F8FAFC;
+  --color-white: #FFFFFF;
+  --color-text: #334155;
+  --color-text-light: #64748B;
+  --font-main: 'Inter', sans-serif;
+  --transition: all 0.3s ease;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-main); color: var(--color-text); background-color: var(--color-light); line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+section { padding: 5rem 0; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-1 { gap: 1rem; }
+.gap-2 { gap: 2rem; }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; cursor: pointer; transition: var(--transition); border: none; gap: 0.5rem; }
+.btn-primary { background-color: var(--color-primary); color: var(--color-white); }
+.btn-outline { background-color: transparent; color: var(--color-primary); border: 2px solid var(--color-primary); }
+header { background-color: rgba(255, 255, 255, 0.95); position: fixed; top: 0; width: 100%; z-index: 1000; box-shadow: var(--shadow); }
+.navbar { height: 80px; }
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--color-dark); }
+.logo span { color: var(--color-primary); }
+.nav-links { display: flex; gap: 2rem; }
+.hero { padding-top: 120px; display: flex; align-items: center; background: linear-gradient(135deg, var(--color-light) 0%, #E2E8F0 100%); }
+.hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
+.section-title { text-align: center; margin-bottom: 3rem; }
+.benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+.benefit-card { background: var(--color-white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center; }
+.pricing { background-color: var(--color-dark); color: var(--color-white); }
+.pricing-card { background: var(--color-dark-light); border-radius: 1rem; padding: 3rem 2rem; text-align: center; max-width: 400px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.1); }
+.price { font-size: 3rem; font-weight: 800; }
+.project-value { background: rgba(59, 130, 246, 0.1); border: 1px dashed var(--color-primary); padding: 1rem; border-radius: 0.5rem; margin-top: 1.5rem; }
+.whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; width: 60px; height: 60px; background-color: #25D366; color: #FFF; border-radius: 50px; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100; }
